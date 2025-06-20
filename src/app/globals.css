@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: 270 80 20;
+  --color-secondary: 47 80 50;
+  --color-on-primary: 260 9 13;
+  --color-on-secondary: 260 9 13;
+}
+
+[data-mode='light'] {
+  --color-background: 0 0 100;
+  --color-on-background: 0 0 0;
+}
+[data-mode='dark'] {
+  --color-background: 0 0 0;
+  --color-on-background: 0 0 100;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  color: hsl(var(--color-on-background));
+  background-color: hsl(var(--color-background));
+  scroll-behavior: smooth;
+}
