@@ -3,19 +3,19 @@
 @tailwind utilities;
 
 :root {
-  --color-primary: 270 80 20;
-  --color-secondary: 47 80 50;
-  --color-on-primary: 260 9 13;
-  --color-on-secondary: 260 9 13;
+  --color-primary: 270 80% 20%;
+  --color-secondary: 47 80% 50%;
+  --color-on-primary: 260 9% 13%;
+  --color-on-secondary: 260 9% 13%;
 }
 
 [data-mode='light'] {
-  --color-background: 0 0 100;
-  --color-on-background: 0 0 0;
+  --color-background: 0 0% 100%;
+  --color-on-background: 0 0% 0%;
 }
 [data-mode='dark'] {
-  --color-background: 0 0 0;
-  --color-on-background: 0 0 100;
+  --color-background: 0 0% 0%;
+  --color-on-background: 0 0% 100%;
 }
 
 body {
